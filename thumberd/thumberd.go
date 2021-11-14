@@ -23,7 +23,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/naoina/toml"
-	"github.com/smartnews/yoya-thumber/thumbnail"
+	"github.com/ryanoun/yoya-thumber/thumbnail"
 	"golang.org/x/net/http2"
 )
 
@@ -33,8 +33,8 @@ var show_version = flag.Bool("version", false, "show version and exit")
 
 var version string
 
-const maxDimension = 65000
-const maxPixels = 100000000
+const maxDimension = 2100
+const maxPixels = 4000000
 const defaultScheme = "http"
 
 var http_stats struct {

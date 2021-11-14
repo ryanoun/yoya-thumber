@@ -93,11 +93,11 @@ RUN \
     go get github.com/naoina/toml && \
     go get golang.org/x/net/http2
 
-ADD thumberd /go/src/github.com/smartnews/yoya-thumber/thumberd
-ADD thumbnail /go/src/github.com/smartnews/yoya-thumber/thumbnail
+ADD thumberd /go/src/github.com/ryanoun/yoya-thumber/thumberd
+ADD thumbnail /go/src/github.com/ryanoun/yoya-thumber/thumbnail
 
 RUN \
-    cd /go/src/github.com/smartnews/yoya-thumber/thumberd && \
+    cd /go/src/github.com/ryanoun/yoya-thumber/thumberd && \
     go install
 
 ADD files/thumberd.toml /etc/thumberd.toml

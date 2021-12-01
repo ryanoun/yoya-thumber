@@ -34,7 +34,7 @@ var show_version = flag.Bool("version", false, "show version and exit")
 var version string
 
 const maxDimension = 2100
-const maxPixels = 4000000
+const maxPixels = 6000000
 const defaultScheme = "http"
 
 var http_stats struct {
